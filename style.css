@@ -14,3 +14,8 @@
   --GreenTeal: hsl(166, 100%, 37%);
   --CobaltBlue: hsl(234, 85%, 45%);
 }
+
+main:nth-child(1) {
+  background-color: purple;
+  padding: 2em;
+}
