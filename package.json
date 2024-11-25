@@ -6,8 +6,10 @@
     "dev": "vite --open --host",
     "build":"vite build",
     "preview":"vite preview --open --host",
-    "deploy":"surge ./dist syntra-fe-2024-results-robin.surge.sh",
-    "postdeploy":"open https://www.syntra-fe-2024-results-robin.surge.sh"
+    "deploy-main":"surge ./dist syntra-fe-2024-results-robin.surge.sh",
+    "postdeploy-main":"open https://www.syntra-fe-2024-results-robin.surge.sh",
+    "deploy-develop":"surge ./dist syntra-fe-2024-results-robin-test.surge.sh",
+    "postdeploy-develop":"open https://www.syntra-fe-2024-results-robin-test.surge.sh"
   },
   "keywords": [],
   "author": "",
