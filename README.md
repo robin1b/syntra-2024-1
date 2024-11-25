@@ -26,3 +26,12 @@ npm run build
 als het werkt: npm run deploy
 zet het op een internet site
 als
+
+wat git regels
+
+git checkout main -> ga naar main branch
+git checkout develop -> ga naar develop branch
+
+git add . -> klaarzetten voor push
+git commit -m "message" pushen naar de huidinge branch
+git push

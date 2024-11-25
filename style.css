@@ -1,6 +1,6 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css);
 @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&display=swap");
-
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
 :root {
   font-size: 62.5%;
   --LightSlateBlue: hsl(252, 100%, 67%);
@@ -14,6 +14,14 @@
   --OrangeyYellow: hsl(39, 100%, 56%);
   --GreenTeal: hsl(166, 100%, 37%);
   --CobaltBlue: hsl(234, 85%, 45%);
+}
+
+body {
+  overflow: hidden;
+  min-height: 100vh;
+}
+canvas {
+  pointer-events: none;
 }
 
 main {
@@ -41,6 +49,11 @@ main {
           var(--VioletBlue),
           var(--PersianBlue)
         );
+        opacity: 0;
+        animation: rotateIn;
+        animation-fill-mode: forwards;
+        animation-duration: 500ms;
+        animation-delay: 500ms;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -67,6 +80,11 @@ main {
         width: 70%;
         margin: 1rem auto;
         line-height: 2.1rem;
+      }
+      h2,
+      p {
+        animation-name: fadeInDown;
+        animation-duration: 400ms;
       }
     }
     &:nth-child(2) {
@@ -100,6 +118,11 @@ main {
             }
           }
           &:nth-child(1) {
+            opacity: 0;
+            animation: fadeIn;
+            animation-fill-mode: forwards;
+            animation-duration: 500ms;
+            animation-delay: 500ms;
             background-color: color-mix(
               in hsl,
               var(--LightRed) 10%,
@@ -110,6 +133,11 @@ main {
             }
           }
           &:nth-child(2) {
+            opacity: 0;
+            animation: fadeIn;
+            animation-fill-mode: forwards;
+            animation-duration: 500ms;
+            animation-delay: 700ms;
             background-color: color-mix(
               in hsl,
               var(--OrangeyYellow) 10%,
@@ -120,6 +148,11 @@ main {
             }
           }
           &:nth-child(3) {
+            opacity: 0;
+            animation: fadeIn;
+            animation-fill-mode: forwards;
+            animation-duration: 500ms;
+            animation-delay: 900ms;
             background-color: color-mix(
               in hsl,
               var(--GreenTeal) 10%,
@@ -130,6 +163,11 @@ main {
             }
           }
           &:nth-child(4) {
+            opacity: 0;
+            animation: fadeIn;
+            animation-fill-mode: forwards;
+            animation-duration: 500ms;
+            animation-delay: 1.2s;
             background-color: color-mix(
               in hsl,
               var(--CobaltBlue) 10%,

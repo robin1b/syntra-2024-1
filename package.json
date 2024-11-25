@@ -4,15 +4,18 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite --open --host",
-    "build":"vite build",
-    "preview":"vite preview --open --host",
-    "deploy-main":"surge ./dist syntra-fe-2024-results-robin.surge.sh",
-    "postdeploy-main":"open https://www.syntra-fe-2024-results-robin.surge.sh",
-    "deploy-develop":"surge ./dist syntra-fe-2024-results-robin-test.surge.sh",
-    "postdeploy-develop":"open https://www.syntra-fe-2024-results-robin-test.surge.sh"
+    "build": "vite build",
+    "preview": "vite preview --open --host",
+    "deploy-main": "surge ./dist syntra-fe-2024-results-robin.surge.sh",
+    "postdeploy-main": "open https://www.syntra-fe-2024-results-robin.surge.sh",
+    "deploy-develop": "surge ./dist syntra-fe-2024-results-robin-test.surge.sh",
+    "postdeploy-develop": "open https://www.syntra-fe-2024-results-robin-test.surge.sh"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "canvas-confetti": "^1.9.3"
+  }
 }
