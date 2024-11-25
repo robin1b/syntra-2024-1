@@ -2,7 +2,6 @@ import confetti from "canvas-confetti";
 
 var myCanvas = document.createElement("canvas");
 document.body.appendChild(myCanvas);
-import confetti from "canvas-confetti";
 
 var myCanvas = document.createElement("canvas");
 document.body.appendChild(myCanvas);
